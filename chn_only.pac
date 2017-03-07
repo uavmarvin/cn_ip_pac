@@ -4,7 +4,7 @@ if (direct == "__DIR" + "ECT__") direct = "DIRECT;";
 var wall_proxy = function(){ return direct; };
 var wall_v6_proxy = function(){ return direct; };
 
-var nowall_proxy = function(){ return "__PROXY__"; };
+var nowall_proxy = function(){ return "SOCKS5 127.0.0.1:1080"; };
 var ip_proxy = function(){ return nowall_proxy(); };
 var ipv6_proxy = function(){ return wall_v6_proxy(); };
 
